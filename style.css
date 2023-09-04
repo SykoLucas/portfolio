@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+}
+
+.container {
+    text-align: center;
+    margin: 10% auto;
+    padding: 20px;
+    background-color: var(--sub-color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #0a0a0a;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.banner {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.header {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media queries para tornar a página responsiva */
+@media (max-width: 768px) {
+    .container {
+        margin: 5% auto;
+    }
+}

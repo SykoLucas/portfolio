@@ -1,0 +1,93 @@
+.skills {
+  margin-top: 4rem;
+  background: var(--bg3-color);
+}
+
+.skills__titulo {
+   text-align: center;
+   margin: 1.8rem, 0;
+}
+
+.skills__titulo h1 {
+   font-family: 'Lobster', cursive;
+    font-size: 2.5rem;
+    color: var(--hover-color);
+    margin-bottom: 1rem;
+}
+
+.skills__titulo h1:hover {
+    color: orange;
+    transition: 2s;
+}
+
+.skills__titulo p {
+    font-size: 1.5rem;
+    margin-bottom: 5.7rem;
+    position: relative;
+    color: var(--sub-color);
+}
+
+/* CARDS */
+.skills__cards {
+    display: flex;
+    justify-content: center;
+    gap: 1.3rem;
+}
+
+.skills__card {
+    --background: linear-gradient(to left, #880505 0%, #f36b11 100%);
+    width: 220px;
+    height: 190px;
+    padding: 4px;
+    border-radius: 5px;
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    background: var(--background);
+    position: relative;
+  }
+  
+  .skills__card .skills__box {
+    position: relative;
+    width: 220px;
+    height: 180px;
+    background: #1b1b1b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+  
+  .skills__card .skills__box .skills__conteudo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    padding: 0 10px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .skills__card .skills__box .icon {
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 0 0 3px #e6e6e6, 0 0 0 5px rgb(212, 10, 10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .skills__card .skills__box .skills__conteudo {
+    border-radius: 50%;
+    font-size: 1.5rem;
+  }
+  
+.skills__conteudo img{
+ max-width: 50%;
+}

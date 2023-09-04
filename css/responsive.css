@@ -1,0 +1,113 @@
+@media(max-width: 1280px){
+
+    /* HEADER */
+    header {
+        justify-content: space-between;
+        padding: 30px 70px;
+    }
+
+    header .navlist {
+        display: none;
+    }
+
+    header .navlist.ativado {
+        background: linear-gradient(darkred, var(--bg2-color));
+        display: grid;
+        position: absolute;
+        color: var(--text-color);
+        top: 4.5rem;
+        right: 3.5rem;
+        padding: 1.875rem;
+        z-index: 1;
+        border-radius: 0 0 4px 4px;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+   
+    /* SEÇÃO HOME */
+    .home .redes-icon {
+        display: none;
+    }
+    
+    /* SEÇÃO SOBRE */
+    .sobre .card {
+        grid-column: 1/-1;
+        justify-self: center;
+    }
+
+    .sobre__conteudo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobre__composicao {
+        text-align: center;
+        margin-bottom: 20px;
+        width: 52%;
+    }
+
+    .sobre__conteudo .sobre__composicao h1 {
+        font-size: 1.575rem;
+    }
+
+    .sobre__conteudo .sobre__composicao p {
+        font-size: 1.3rem;
+    }
+
+
+    .hobbies {
+        text-align: center;
+    }
+
+    .hobbies__conteudo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hobbies__card {
+        width: 50%;
+    }
+
+    /* SEÇÃO SKILLS */
+    .skills__cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills__card {
+        width: 80%;
+    }
+
+    .skills__box {
+        width: 100%;
+    }
+
+
+    /* SEÇÃO FORMAÇÕES */
+    .formacoes {
+        text-align: center;
+    }
+
+    .formacoes__conteudo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .formacoes__card {
+        width: 50%;
+    }
+
+    /* SEÇÃO PROJETOS */
+    .portfolio__conteudo .portfolio__projeto {
+        max-width: 69%;
+        justify-self: center;
+    }
+    /* FOOTER */
+    .footer__redes{
+        display: inline-block;
+    }
+}
+

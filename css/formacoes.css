@@ -1,0 +1,70 @@
+.formacao {
+    margin-top: 4rem;
+    background: var(--bg3-color);
+}
+
+.formacao__titulo {
+    text-align: center;
+    margin: 1.8rem, 0;
+ }
+
+ .formacao__titulo h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 2.5rem;
+    color: var(--hover-color);
+    margin-bottom: 5.7rem;
+}
+
+.formacao__titulo h1:hover {
+    color: orange;
+    transition: 2s;
+}
+
+/* CARDS */
+
+.formacoes__conteudo {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    animation: transicao 2s forwards ease-in-out;
+}
+
+.formacoes img{
+width: 125px;
+height: 115px;
+border: 3px solid silver;
+border-radius: 50%;
+justify-content: center;
+}
+
+.formacoes__card {
+    width: 275px;
+    height: 275px;
+    background-color: #1B1B1B;
+    border: 4px solid;
+    border-top-color: var(--hover-color);
+    border-left-color: var(--sub-color);
+    border-right-color: darkred;
+    border-bottom-color: greenyellow;
+    border-radius: 20px;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .formacoes__card:hover {
+    box-shadow: 0px 0px 30px 1px var(--hover-color);
+  }
+
+  @keyframes transicao {
+    from {
+        transition: 0.8s;
+        transform: translate3d(3.75rem, 0, 0);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}

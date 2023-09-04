@@ -1,0 +1,62 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 0.8rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    background-color: var(--bg-color);
+}
+
+header.sticky {
+    background: var(--bg-color);
+    border-bottom: 1px solid var(--hover-color);
+    padding: 10px 8%;
+}
+
+.img__logo{
+    width: 1.6rem;
+    border-radius: 50%; 
+}
+
+.logo{
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+span{
+    color: var(--hover-color);
+}
+
+.navlist{
+    display: flex;
+}
+
+.navlist a{
+    color: var(--text-color);
+    font-weight: 600;
+    padding: 10px 20px;
+}
+
+.navlist a:hover{
+    color: var(--hover-color);
+    text-shadow: 0 0 10px rgba(255,217,102,0.9),
+    0 0 20px rgba(255,217,102,0.9),
+    0 0 30px rgba(255,217,102,0.9),
+    0 0 40px rgba(255,217,102,0.9),
+    0 0 70px rgba(255,217,102,0.9),
+    0 0 80px rgba(255,217,102,0.9),
+    0 0 100px rgba(255,217,102,0.9),
+    0 0 150px rgba(255,217,102,0.9);
+}
+
+.navlist a.active{
+    color: var(--hover-color);
+}

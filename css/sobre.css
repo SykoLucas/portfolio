@@ -1,0 +1,123 @@
+.sobre {
+    justify-content: center;
+    display: grid;
+    gap: 1.8rem;
+    padding: 2.5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: var(--bg3-color);
+
+}
+
+.sobre__titulo {
+    text-align: center;
+    grid-column: 1/-1;
+    margin: 1.8rem 0;
+}
+
+.sobre__titulo h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 2.5rem;
+    color: var(--hover-color);
+    margin-bottom: 1rem;
+}
+
+.sobre__titulo h1:hover {
+    color: orange;
+    transition: 2s;
+}
+
+.sobre__titulo p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+    color: var(--sub-color);
+}
+
+.sobre__conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 2/-1;
+    animation: transicao 1s forwards ease-in-out;
+}
+
+.sobre__composicao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1/-1;
+    max-width: 100%;
+}
+
+.sobre__composicao h1 {
+    font-size: 2.1rem;
+    grid-column: 1/-1;
+}
+
+.sobre__composicao h1::after {
+    display: block;
+    background: darkred;
+    height: 0.2rem;
+    width: 7.5rem;
+    margin: 1rem 0;
+    border-radius: 25%;
+    content: "";
+}
+
+.sobre__composicao p {
+    grid-column: 1/-1;
+    grid-row: 2;
+    font-size: 1.3rem;
+}
+
+/* SOBRE MIM -HOBBIES */
+
+.hobbies {
+    margin-top: 5rem;;
+}
+
+.hobbies h2 {
+    font-size: 1.9rem;
+    color: var(--sub-color);
+    align-items: center;
+}
+
+.hobbies__conteudo {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+  }
+
+  .hobbies__card {
+    background-color: #222222;
+    width: 130px;
+    height: 115px;
+    border-radius: 5%;
+    padding: 1.2rem;
+    text-align: center;
+    box-shadow: 0 2px 4px var(--sub-color);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .hobbies__card i {
+    font-size: 36px;
+    color: var(--hover-color);
+  }
+  
+  .hobbies__card p {
+    margin-top: 10px;
+  }
+
+  .hobbies__card:hover{
+    border: 4px groove var(--bg-color);
+  }
+
+@keyframes transicao {
+    from {
+        transition: 0.8s;
+        transform: translate3d(3.75rem, 0, 0);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
